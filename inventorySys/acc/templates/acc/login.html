@@ -1,0 +1,26 @@
+{% extends "inve/layout.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+    Login
+{% endblock title %}
+    
+
+
+
+{% block content %}
+<div class="mt-5"  style="margin: top 30%;">
+    <div class="container">
+    
+        <h1>Login</h1>
+        <form method="POST">
+            <fieldset>
+                {% csrf_token %}
+                {{form|crispy}}
+                <button type="submit">login</button>
+            </fieldset>
+        </form>
+        <h3>for register click <a href="{% url 'register' %}">here..</a></h3>
+
+    </div>
+</div>
+{% endblock content %}
