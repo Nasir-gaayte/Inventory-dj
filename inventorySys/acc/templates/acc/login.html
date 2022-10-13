@@ -12,7 +12,7 @@
     <div class="container">
     
         <h1>Login</h1>
-        <form method="POST">
+        <form method="POST" class="form-control form-control-lg" >
             <fieldset>
                 {% csrf_token %}
                 {{form|crispy}}

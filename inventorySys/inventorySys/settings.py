@@ -131,3 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CRISPY_FORMS_PACK = 'bootstrap4'
+
+LOGIN_URL = 'login/'

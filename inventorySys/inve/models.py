@@ -16,3 +16,7 @@ class Inventory(models.Model):
     
     def __str__(self):
         return self.name
+
+
+
+# name  cost_product  qty_in_stock  qty_sold sales  stack_date last_sales_date 
