@@ -37,7 +37,7 @@
             </tbody>
             <div style="display:flex; justify-content: space-between ;">
                 <button class="btn btn-secondary" type="submit"><a href="{% url 'update' inve.id %}">Update</a></button>
-                <button class="btn btn-danger" type="submit"><a href="">Delete</a></button>
+                <button class="btn btn-danger" type="submit"><a href="{% url 'delete' inve.id %}">Delete</a></button>
             </div>
     </div>
 </div>
