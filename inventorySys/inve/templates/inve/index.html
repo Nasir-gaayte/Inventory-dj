@@ -27,7 +27,7 @@
             </thead>
             {% for inventory in inventorys %}
             <tbody>
-                <tr style=" cursor: position; cursor: hand;">
+                <tr style=" cursor: position; cursor: hand;" onclick="window.location = '{% url 'view_detail' inventory.id %} ' ">
                     <th scope="row" ><a href="{% url 'view_detail' inventory.id %}">{{ forloop.counter }}</a></th>
                     <td scope='row'>{{inventory.name}}</td>
                     <td scope='row'>{{inventory.cost_product}}</td>
