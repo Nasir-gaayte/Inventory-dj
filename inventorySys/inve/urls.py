@@ -10,4 +10,5 @@ urlpatterns = [
     # path('update/<int:pk>/',views.update_inve,name='update'),
     path('update/<int:pk>/',views.Updat_v.as_view(),name='update'),
     path('delete/<id>/',views.delete_v,name='delete'),
+    # path('dashboard/',views.dashboard,name='dashboard'),
 ]
